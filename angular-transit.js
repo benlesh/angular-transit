@@ -1,5 +1,6 @@
 /*
- * Author: Ben Lesh (c) 2013
+ * angular-transit v 0.1.0 
+ * (c) 2013 Ben Lesh
  * MIT Licensed
  */
 (function(window, angular) {
