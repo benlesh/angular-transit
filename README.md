@@ -2,7 +2,9 @@ angular-transit
 ===============
 
 (c) 2013 Ben Lesh
+
 http://www.benlesh.com
+
 MIT Licensed
 
 A module for AngularJS containing directives for CSS3 animations. The goal of this project is to create a robust toolset
