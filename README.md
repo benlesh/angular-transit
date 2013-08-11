@@ -1,7 +1,12 @@
 angular-transit
 ===============
 
-A module for AngularJS containing directives for CSS3 animations.
+(c) 2013 Ben Lesh
+http://www.benlesh.com
+MIT Licensed
+
+A module for AngularJS containing directives for CSS3 animations. The goal of this project is to create a robust toolset
+for creating animations programmatically with AngularJS.
 
 ##Usage
 
@@ -15,26 +20,29 @@ the following will animate the div to `left: 200px` when `$scope.boolExpr == tru
 
 If multiple animation expressions are "true" they will be executed one after the other in the order they resolved as true.
 
-### Duration
+### Duration / Delay
 
-Duration can be set with `$duration` on the options object:
+Duration can be set with `$duration` or `$delay` on the transit object:
 
     <div transit="{
         'boolExpr' : {
             $duration: '4s',
+            $delay: '2s',
             left: '200px'
         }
         }"></div>
 
-Duration can also be set at the individual property level. The following will animate left to 200px in 4s,
-and top to 100px in 1s simultaneously.
+Duration can also be set at the individual property level. The following will start animating left in .5 seconds, taking
+4 seconds to complete the left animation. It will will also wait 6 seconds to animate top to 100px in 1s simultaneously.
 
      <div transit="{
          'boolExpr' : {
              $duration: '4s',
+             $delay: '.5s',
              left: '200px',
              top: {
                 duration: '1s',
+                delay: '6s',
                 value: '100px'
              }
          }
