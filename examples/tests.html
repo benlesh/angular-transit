@@ -26,6 +26,7 @@
 <button ng-click="foo = foo + 1">increment: {{foo}}</button>
 <div class="test" transit="{
     'foo == 1' : {
+        $easing: 'quadIn',
        'left': '200px',
        'top': '200px'
     },
