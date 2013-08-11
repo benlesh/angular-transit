@@ -4,8 +4,17 @@ module.exports = function (grunt) {
             all: ['angular-transit.js']
         },
         uglify: {
-            main: {
-                'angular-transit.min.js': ['angular-transit.js']
+            options: {
+                banner: '/**\n' +
+                    ' * angular-transit.js\n' +
+                    ' * (c) 2013 Ben Lesh http://www.benlesh.com\n' +
+                    ' * MIT Licensed\n' +
+                    ' */\n\n'
+            },
+            all: {
+                files: {
+                    'angular-transit.min.js': ['angular-transit.js']
+                }
             }
         },
         watch: {
