@@ -20,12 +20,11 @@
                 return 'cubic-bezier(' + [a, b, c, d].join(',') + ')';
             },
             easingTypes = {
-                '_default': 'ease',
+                'default': 'ease',
                 'in': 'ease-in',
                 'out': 'ease-out',
                 'in-out': 'ease-in-out',
                 'snap': cubicBez(0, 1, 0.5, 1),
-                // Penner equations
                 'cubicOut': cubicBez(0.215, 0.61, 0.355, 1),
                 'cubicInOut': cubicBez(0.645, 0.045, 0.355, 1),
                 'circIn': cubicBez(0.6, 0.04, 0.98, 0.335),
