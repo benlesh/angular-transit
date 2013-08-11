@@ -66,8 +66,11 @@ timing function they choose (per CSS3 specs and as browsers allow):
 
 #### Built-in Easing Functions:
 
-There are several built-in easing functions that can be used. Many of them based off of
-[Robert Penner's easing functions](http://easings.net/), however I changed the names to be less verbose.
+There are several built-in easing functions that can be used. These are based off of settings from
+[jquery-transit](https://github.com/rstacruz/jquery.transit/blob/master/jquery.transit.js) which seem to be based off
+of [Robert Penner's easing functions](http://easings.net/). It should be noted that I changed the names to be less
+verbose, however.
+
 Usage of a built-in easing function is as follows:
 
       <div transit="{
