@@ -11,8 +11,11 @@ A module for AngularJS containing directives for CSS3 animations. The goal of th
 for creating animations from code with AngularJS. **This is currently beta**. I haven't figured out a great way
 to end-to-end test this.
 
-In future releases I plan on supporting @keyframes animation and performing multiple transitions one after the other per
-transit expression (meaning a single animation trigger could set in motion a series of animations in the queue).
+Upcoming Releases:
+
+- Support for @keyframes animations
+- Legacy browser detection and support (probably in a separate file)
+- Chained transitions per trigger. So basically one trigger can add n-transitions to the transit queue.
 
 ##Usage
 
