@@ -34,7 +34,7 @@ and top to 100px in 1s simultaneously.
              $duration: '4s',
              left: '200px',
              top: {
-                $duration: '1s',
+                duration: '1s',
                 value: '100px'
              }
          }
