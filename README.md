@@ -48,6 +48,49 @@ Duration can also be set at the individual property level. The following will st
          }
          }"></div>
 
+### Easing
+
+This toolset comes with a list of preset easing timing functions, as well as allowing the developer to specify any
+timing function they choose (per CSS3 specs and as browsers allow):
+
+    <div transit="{
+        $easing: 'cubic-bezier(.1,0,-2,.25)',
+        left: '200px'
+    }"></div>
+
+#### Built-in Easing Functions:
+
+Easing based off of [Robert Penner's easing functions](http://easings.net/):
+
+- default: 'ease'
+- in: 'ease-in'
+- out: 'ease-out'
+- in-out: 'ease-in-out'
+- snap: cubicBez(0, 1, 0.5, 1)
+- cubicOut: cubicBez(0.215, 0.61, 0.355, 1)
+- cubicInOut: cubicBez(0.645, 0.045, 0.355, 1)
+- circIn: cubicBez(0.6, 0.04, 0.98, 0.335)
+- circOut: cubicBez(0.075, 0.82, 0.165, 1)
+- circInOut: cubicBez(0.785, 0.135, 0.15, 0.86)
+- expoIn: cubicBez(0.95, 0.05, 0.795, 0.035)
+- expoOut: cubicBez(0.19, 1, 0.22, 1)
+- expoInOut: cubicBez(1, 0, 0, 1)
+- quadIn: cubicBez(0.55, 0.085, 0.68, 0.53)
+- quadOut: cubicBez(0.25, 0.46, 0.45, 0.94)
+- quadInOut: cubicBez(0.455, 0.03, 0.515, 0.955)
+- quartIn: cubicBez(0.895, 0.03, 0.685, 0.22)
+- quartOut: cubicBez(0.165, 0.84, 0.44, 1)
+- quartInOut: cubicBez(0.77, 0, 0.175, 1)
+- quintIn: cubicBez(0.755, 0.05, 0.855, 0.06)
+- quintOut: cubicBez(0.23, 1, 0.32, 1)
+- quintInOut: cubicBez(0.86, 0, 0.07, 1)
+- sineIn: cubicBez(0.47, 0, 0.745, 0.715)
+- sineOut: cubicBez(0.39, 0.575, 0.565, 1)
+- sineInOut: cubicBez(0.445, 0.05, 0.55, 0.95)
+- backIn: cubicBez(0.6, -0.28, 0.735, 0.045)
+- backOut: cubicBez(0.175, 0.885, 0.32, 10.275)
+- backInOut: cubicBez(0.68, -0.55, 0.265, 10.55)
+
 ### Events
 
 Events can be handled two ways...
