@@ -20,10 +20,9 @@
                 return 'cubic-bezier(' + [a, b, c, d].join(',') + ')';
             },
             easingTypes = {
-                'default': 'ease',
                 'in': 'ease-in',
                 'out': 'ease-out',
-                'in-out': 'ease-in-out',
+                'inOut': 'ease-in-out',
                 'snap': cubicBez(0, 1, 0.5, 1),
                 'cubicOut': cubicBez(0.215, 0.61, 0.355, 1),
                 'cubicInOut': cubicBez(0.645, 0.045, 0.355, 1),
@@ -52,7 +51,7 @@
 
         function getEasing(easing) {
             if (!easing) {
-                return 'linear';
+                return 'ease';
             }
             return easingTypes[easing] || easing;
         }

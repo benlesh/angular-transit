@@ -60,12 +60,21 @@ timing function they choose (per CSS3 specs and as browsers allow):
 
 #### Built-in Easing Functions:
 
-Easing based off of [Robert Penner's easing functions](http://easings.net/):
+There are several built-in easing functions that can be used. Many of them based off of
+[Robert Penner's easing functions](http://easings.net/), however I changed the names to be less verbose.
+Usage of a built-in easing function is as follows:
+
+      <div transit="{
+          $easing: 'quintInOut',
+          left: '200px'
+      }"></div>
+
+#### List of Built-In Easing Functions:
 
 - default: 'ease'
 - in: 'ease-in'
 - out: 'ease-out'
-- in-out: 'ease-in-out'
+- inOut: 'ease-in-out'
 - snap: cubicBez(0, 1, 0.5, 1)
 - cubicOut: cubicBez(0.215, 0.61, 0.355, 1)
 - cubicInOut: cubicBez(0.645, 0.045, 0.355, 1)
