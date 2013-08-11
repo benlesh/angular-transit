@@ -1,4 +1,4 @@
-angular-transit
+angular-transit v 0.2.0
 ===============
 
 (c) 2013 Ben Lesh
@@ -8,7 +8,11 @@ http://www.benlesh.com
 MIT Licensed
 
 A module for AngularJS containing directives for CSS3 animations. The goal of this project is to create a robust toolset
-for creating animations programmatically with AngularJS.
+for creating animations from code with AngularJS. **This is currently beta**. I haven't figured out a great way
+to end-to-end test this.
+
+In future releases I plan on supporting @keyframes animation and performing multiple transitions one after the other per
+transit expression (meaning a single animation trigger could set in motion a series of animations in the queue).
 
 ##Usage
 
