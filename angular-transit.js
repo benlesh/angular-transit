@@ -77,6 +77,8 @@
                     if (transitQueue.length > 0) {
                         currentTransit = transitQueue.shift();
                         elem.css(currentTransit.css);
+                    } else {
+                        currentTransit = null;
                     }
                 }
             });
