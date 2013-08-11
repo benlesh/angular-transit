@@ -7,12 +7,13 @@ http://www.benlesh.com
 
 MIT Licensed
 
-A module for AngularJS containing directives for CSS3 animations. The goal of this project is to create a robust toolset
+A module for AngularJS containing directives for CSS3 animations. The goal of this project is to create a robust tool set
 for creating animations from code with AngularJS. **This is currently beta**. I haven't figured out a great way
 to end-to-end test this.
 
 Upcoming Releases:
 
+- Realtime re-evaluation of values. So you can do things like `left: x + 'px'` where $scope.x is changing.
 - Support for @keyframes animations
 - Legacy browser detection and support (probably in a separate file)
 - Chained transitions per trigger. So basically one trigger can add n-transitions to the transit queue.
@@ -21,9 +22,21 @@ Upcoming Releases:
 
 ###Basic usage
 
-the following will animate the div to `left: 200px` when `$scope.boolExpr == true`;
+the following will animate the div to `left: 200px` when `$scope.boolExpr == true`. Keep in mind, *any expression* can
+be used here, such as `foo == 0` or `someFunc()`.
+
+Basic boolean check:
 
     <div transit="{ 'boolExpr' : { 'left' : '200px' } }"></div>
+
+As a "switch":
+
+    <div transit="{
+        'foo == 0' : { left: '10px' },
+        'foo == 1' : { left: '20px' },
+        'foo == 2' : { left: '30px' },
+        'foo > 3' : { left: '100px' }
+    }"></div>
 
 ### Supports Queueing
 
