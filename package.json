@@ -1,0 +1,37 @@
+{
+  "name": "angular-transit",
+  "version": "0.2.0",
+  "description": "An angular library for CSS3 animations",
+  "main": "angular-transit.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-jshint": "~0.6.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-watch": "~0.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/blesh/angular-transit"
+  },
+  "keywords": [
+    "AngularJS",
+    "CSS3",
+    "animation",
+    "transform",
+    "transition"
+  ],
+  "author": "Ben Lesh",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "5093fd72520270c99cea0e99db29d19164484505",
+  "bugs": {
+    "url": "https://github.com/blesh/angular-transit/issues"
+  }
+}
